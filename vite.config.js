@@ -1,0 +1,37 @@
+import { defineConfig, loadEnv } from 'vite';
+
+export default defineConfig({
+  root: 'src',
+  base: '/',
+  publicDir: '../public',
+  build: {
+    outDir: '../dist',
+    emptyOutDir: true,
+    assetsDir: 'assets',
+    sourcemap: true,
+    minify: true,
+    target: 'esnext',
+    polyfillDynamicImport: true,
+    brotliSize: true,
+    chunkSizeWarningLimit: 500,
+  },
+  plugins: [],
+  server: {
+    port: 3000,
+    watch: {
+      usePolling: true,
+    },
+  },
+  resolve: {
+    alias: {
+      '@': '/js',
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "src/scss/variables.scss";',
+      },
+    },
+  },
+});
