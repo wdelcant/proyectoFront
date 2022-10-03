@@ -13,6 +13,12 @@
   z-index: 100;
   clip-path: circle(150% at 100% 0);
   transition: clip-path 0.8s ease-in-out;
+
+  .loader {
+    width: 50px;
+    height: 50px;
+  }
+
   img {
     width: 200px;
   }
