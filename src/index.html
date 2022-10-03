@@ -2,13 +2,228 @@
 <html lang="es">
 
 <head>
+  <!-- titulo -->
+  <title>Repostería Abu Shole</title>
+
+  <!-- Required meta tags -->
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/assets/images/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vite App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Meta tags para SEO -->
+  <meta name="description" content="Repostería Abu Shole, tortas para todo tipo de eventos" />
+
+  <!-- Meta tags para redes sociales -->
+  <meta property="og:title" content="Repostería Abu Shole" />
+  <meta property="og:description" content="Repostería Abu Shole, tortas para todo tipo de eventos" />
+  <meta property="og:image" content="https://abushole.com/img/logo.png" />
+  <meta property="og:url" content="https://abushole.com" />
+  <meta property="og:site_name" content="Repostería Abu Shole" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:type" content="website" />
+
+  <!-- twitter meta tags -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@sholeabu" />
+  <meta name="twitter:creator" content="@sholeabu" />
+  <meta name="twitter:title" content="Repostería Abu Shole" />
+  <meta name="twitter:description" content="Repostería Abu Shole, tortas para todo tipo de eventos" />
+  <meta name="twitter:image" content="/assets/logo.svg" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 </head>
+
 <body>
-  <div id="app"></div>
+
+  <!-- Header -->
+  <header>
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="/">
+          <img src="/assets/logo.svg" alt="Logo Image">
+        </a>
+      </div>
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Pide Aquí</a></li>
+        <li><a href="#produtcs">Productos</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Repostería Abu Shole</h1>
+        <p>Tortas para todo tipo de eventos</p>
+        <button href="#" class="btn">Pide Aquí</button>
+      </div>
+    </section>
+  </main>
+  <section class="product__container">
+    <div class="product__content">
+      <h2 class="product__content--title">Nuestros Productos</h2>
+      <div class="product__content--cards">
+
+        <figure class="product__content--cards--card">
+          <div>
+            <img src="/assets/images/productos/torta-chocolate.png" alt="product1">
+          </div>
+          <figcaption>
+            <a href="/tortas" alt="tortitas">
+              <div class="product__content--cards--text">
+                <h2>Torta de Chocolate</h2>
+                <p>Deliciosa torta de chocolate con relleno de chocolate y crema</p>
+              </div>
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="product__content--cards--card">
+          <div>
+            <img src="/assets/images/productos/torta-tresleches.png" alt="product1">
+          </div>
+          <figcaption>
+            <a href="/tortas" alt="tortitas">
+              <div class="product__content--cards--text">
+                <h2>
+                  Torta tres leches
+                </h2>
+                <p>Deliciosa torta de tres leches con relleno de tres leches y crema</p>
+                </p>
+              </div>
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="product__content--cards--card">
+
+          <div>
+            <img src="/assets/images/productos/torta-hoja.png" alt="product1">
+          </div>
+          <figcaption>
+            <a href="/tortas" alt="tortitas">
+              <div class="product__content--cards--text">
+                <h2>Torta de Hoja</h2>
+                <p>Deliciosa torta de hoja con relleno de chocolate y crema</p>
+                </p>
+              </div>
+            </a>
+          </figcaption>
+        </figure>
+
+        <figure class="product__content--cards--card">
+          <div>
+            <img src="/assets/images/productos/torta-panqueque.png" alt="product1">
+          </div>
+          <figcaption>
+            <a href="/tortas" alt="tortitas">
+              <div class="product__content--cards--text">
+                <h2>
+                  Torta de Panqueque Naranja
+                </h2>
+                <p>Deliciosa torta de panqueque con relleno de naranja y crema</p>
+              </div>
+            </a>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="clients__container">
+    <div class="clients__content">
+      <h2 class="clients__content--title">
+        Somos la mejor opción para tu evento
+      </h2>
+      <div id="clients__content--slider">
+        <div class="clients__content--slider-slide">
+          <img src="/assets/images/productos/tortanovios.png" alt="">
+        </div>
+
+        <div class="clients__content--slider-slide">
+          <img src="/assets/images/productos/piedelimon.png" alt="">
+        </div>
+
+        <div class="clients__content--slider-slide">
+          <img src="/assets/images/productos/tortaflores.png" alt="">
+        </div>
+
+        <div class="clients__content--slider-slide">
+          <img src="/assets/images/productos/tortapikachu.png" alt="">
+        </div>
+
+        <!--Controlling arrows-->
+        <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left"
+            aria-hidden="true"></i>
+        </span>
+
+        <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
+            aria-hidden="true"></i>
+        </span>
+
+      </div>
+
+      <div id="dots-con">
+        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <section class="clients__container">
+    <div class="clients__content">
+      <h2 class="clients__content--title">
+        Nuestros Clientes
+      </h2>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer__container">
+      <div class="footer__container--logo">
+        <img src="/assets/logo.svg" alt="Logo Image">
+      </div>
+      <div class="footer__container--social">
+        <a href="https://www.facebook.com/abushole" target="_blank">
+          <img src="/assets/images/facebook.svg" alt="Facebook" class="footer__container--social-facebook">
+        </a>
+        <a href="https://www.instagram.com/abushole/" target="_blank">
+          <img src="/assets/images/instagram.svg" alt="Instagram" class="footer__container--social-instagram">
+        </a>
+        <a href="https://www.twitter.com/sholeabu" target="_blank">
+          <img src="/assets/images/twitter.svg" alt="Twitter" class="footer__container--social-twitter">
+        </a>
+      </div>
+    </div>
+    <div class="footer__container--copiright">
+      <p>
+        © 2022 Repostería Abu Shole | Desarrollado con el ❤️ por <a href="https://www.linkedin.com/in/wilsondelcanto/"
+          target="_blank">Wilson Del Canto</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Loader -->
+  <div class="loader-container">
+    <img src="/assets/logo.svg" alt="">
+    <p>Cargando</p>
+    <img src="/assets/three-dots.svg" alt=" Logo Image">
+  </div>
+
+  <!-- javascript -->
   <script type="module" src="/js/main.js"></script>
 </body>
 

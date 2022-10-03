@@ -1,10 +1,11 @@
-import '../scss/style.scss';
+// Se importan los módulos necesarios
+import { loader } from './components/loader.js';
+import { navBar } from './components/navBar.js';
+import { carousel } from './components/carousel.js';
+// Se importan los estilos
+import '../scss/main.scss';
 
-import { setupCounter } from './components/counter.js';
-
-document.querySelector('#app').innerHTML = `
-  <h1>Contador</h1>
-  <button id="counter"></button>
-`;
-
-setupCounter(document.querySelector('#counter'));
+// llamado a las funciones
+loader();
+navBar();
+carousel();

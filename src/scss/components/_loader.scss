@@ -1,0 +1,39 @@
+// loader
+.loader-container {
+  position: fixed;
+  color: $secondary-color;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  clip-path: circle(150% at 100% 0);
+  transition: clip-path 0.8s ease-in-out;
+  img {
+    width: 200px;
+  }
+  @include mobile() {
+    img {
+      width: 100px;
+    }
+  }
+}
+.loader-container.hidden {
+  clip-path: circle(0% at 100% 100%);
+  animation: loaderfade 1.5s;
+  animation-fill-mode: forwards;
+}
+@keyframes loaderfade {
+  0% {
+    opacity: 100;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

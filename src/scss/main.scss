@@ -1,0 +1,18 @@
+// use normalize
+@import '../../node_modules/normalize.css/normalize';
+//fontawsome Icons
+@import '../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome';
+
+@import 'render';
+@import 'variables';
+@import 'mixins';
+
+// components
+@import 'components/loader';
+@import 'components/navBar';
+@import 'components/hero';
+@import 'components/products';
+@import 'components/clients';
+@import 'components/form';
+@import 'components/carousel';
+@import 'components/footer';
