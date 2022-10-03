@@ -20,7 +20,7 @@ export function navBar() {
 // scroll nav trasparent
 export function scrollNav() {
   window.addEventListener('scroll', () => {
-    const header = document.querySelector('nav');
-    header.classList.toggle('sticky', window.scrollY > 0);
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('sticky', window.scrollY > 0);
   });
 }

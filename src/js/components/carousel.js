@@ -31,3 +31,5 @@ export function carousel() {
     dots[index].classList.add('active');
   }
 }
+
+// Language: javascript
