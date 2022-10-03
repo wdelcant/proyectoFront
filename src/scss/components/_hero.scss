@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(0deg, #ffffff00, #000000a0),
+  background: linear-gradient(0deg, #ffffff00, #000000aa),
     url(/assets/hero.svg) no-repeat center center;
   @include mobile() {
     background: url(/assets/hero.svg) no-repeat;
