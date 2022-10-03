@@ -1,11 +1,22 @@
 nav {
   height: 6rem;
   width: 100vw;
-  background-color: $bg-nav;
-  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  // background-color: $bg-nav;
+
   display: flex;
   position: fixed;
   z-index: 10;
+  transition: all 0.5s ease-in-out;
+}
+
+nav.sticky {
+  background-color: $bg-nav;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+
+  .nav-links li a {
+    color: $primary-color;
+    text-shadow: none;
+  }
 }
 
 /*Styling logo*/
@@ -35,10 +46,11 @@ nav {
 .nav-links li a {
   text-decoration: none;
   margin: 0 0.7vw;
-  color: $primary-color;
+  color: white;
+  text-shadow: 0px 0px 5px, 1px 1px 7px black;
 }
 .nav-links li a:hover {
-  color: $secondary-color;
+  color: white;
 }
 .nav-links li {
   position: relative;
