@@ -37,3 +37,35 @@
   font-weight: 700;
   margin-bottom: 1rem;
 }
+
+@mixin classAnimate() {
+  -webkit-animation: slide-in-bottom 1s ease-in-out  both;
+  animation: slide-in-bottom 1s ease-in-out  both;
+}
+
+@mixin classKeyframe() {
+  @-webkit-keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes slide-in-bottom {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
