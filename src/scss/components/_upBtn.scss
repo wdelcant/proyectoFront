@@ -1,0 +1,33 @@
+.up-button {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $secondary-color;
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  img {
+    width: 60%;
+    height: 50%;
+    object-fit: cover;
+  }
+
+  &:hover {
+    background-color: $secondary-color-hover;
+  }
+  &.effect {
+    display: inline;
+    @include classKeyframe();
+  }
+}

@@ -1,7 +1,7 @@
 // Se importan los módulos necesarios
 import { loader } from './components/loader.js';
 import { navBar, scrollNav } from './components/navBar.js';
-import { scrollEffect } from './components/scrollEffect.js';
+import { waveEffect, btnEffect } from './components/scrollEffect.js';
 import { slider } from './components/slider.js';
 import { contactForm } from './api/contactForm';
 
@@ -12,7 +12,8 @@ import '../scss/main.scss';
 loader();
 scrollNav();
 navBar();
-scrollEffect();
+waveEffect();
+btnEffect();
 slider();
 
 // Se agrega un evento si el contenido es cargado se realiza el llamado.
