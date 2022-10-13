@@ -1,5 +1,6 @@
 .product__container {
   @include container;
+  position: relative;
 }
 
 .product__content {
