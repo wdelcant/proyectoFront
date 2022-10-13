@@ -33,14 +33,16 @@
 }
 
 @mixin title() {
+  text-align: center;
   font-size: 2rem;
   font-weight: 700;
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
 
 @mixin classAnimate() {
-  -webkit-animation: slide-in-bottom 1s ease-in-out  both;
-  animation: slide-in-bottom 1s ease-in-out  both;
+  -webkit-animation: slide-in-bottom 1s ease-in-out both;
+  animation: slide-in-bottom 1s ease-in-out both;
 }
 
 @mixin classKeyframe() {

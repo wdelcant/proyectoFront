@@ -2,8 +2,8 @@
 import { loader } from './components/loader.js';
 import { navBar, scrollNav } from './components/navBar.js';
 import { scrollEffect } from './components/scrollEffect.js';
+import { slider } from './components/slider.js';
 
-import { carousel } from './components/carousel.js';
 // Se importan los estilos
 import '../scss/main.scss';
 
@@ -12,4 +12,4 @@ loader();
 scrollNav();
 navBar();
 scrollEffect();
-carousel();
+slider();

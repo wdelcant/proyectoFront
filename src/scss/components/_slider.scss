@@ -1,0 +1,60 @@
+.container-slider {
+  @include container;
+
+  &--title {
+    @include title;
+  }
+
+  .content-slider {
+    position: relative;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    box-shadow: 0 0 0 10px #fff;
+    margin: 10vh auto;
+
+    .slider {
+      width: 400%;
+      height: 400px;
+      display: flex;
+      margin-left: -100%;
+
+      &__section {
+        width: 100%;
+      }
+      &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .slider__btn {
+      position: absolute;
+      width: 20px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.7);
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border-radius: 20%;
+      font-size: 30px;
+      text-align: center;
+      justify-content: center;
+      font-family: monospace;
+      font-weight: bold;
+      box-shadow: 6px 4px 19px -1px rgba(0, 0, 0, 0.75);
+
+      &:hover {
+        background: rgba(255, 255, 255, 0.9);
+      }
+      &--left {
+        left: 10px;
+      }
+      &--right {
+        right: 10px;
+      }
+    }
+  }
+}

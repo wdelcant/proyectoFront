@@ -74,7 +74,7 @@
   </main>
   <section class="product__container">
     <div class="product__content">
-      <h2 class="product__content--title">Nuestros Productos</h2>
+      <h2 class="product__content--title">Variedades de Productos</h2>
       <div class="product__content--cards">
 
         <figure class="product__content--cards--card ">
@@ -143,43 +143,25 @@
     </div>
   </section>
 
-  <section class="clients__container">
-    <div class="clients__content">
-      <h2 class="clients__content--title">
-        Somos la mejor opción para tu evento
-      </h2>
-      <div id="clients__content--slider">
-        <div class="clients__content--slider-slide">
-          <img src="/assets/images/productos/tortanovios.png" alt="">
+  <section class="container-slider">
+    <h2 class="container-slider--title">Nuestros Productos</h2>
+    <div class="content-slider">
+      <div class="slider" id="slider">
+        <div class="slider__section">
+          <img src="/assets/images/productos/producto1.jpg" alt="" class="slider__img">
         </div>
-
-        <div class="clients__content--slider-slide">
-          <img src="/assets/images/productos/piedelimon.png" alt="">
+        <div class="slider__section">
+          <img src="/assets/images/productos/producto2.jpg" alt="" class="slider__img">
         </div>
-
-        <div class="clients__content--slider-slide">
-          <img src="/assets/images/productos/tortaflores.png" alt="">
+        <div class="slider__section">
+          <img src="/assets/images/productos/producto3.jpg" alt="" class="slider__img">
         </div>
-
-        <div class="clients__content--slider-slide">
-          <img src="/assets/images/productos/tortapikachu.png" alt="">
+        <div class="slider__section">
+          <img src="/assets/images/productos/producto4.jpg" alt="" class="slider__img">
         </div>
-
-        <!--Controlling arrows-->
-        <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left"
-            aria-hidden="true"></i>
-        </span>
-
-        <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right"
-            aria-hidden="true"></i>
-        </span>
-
       </div>
-
-      <div id="dots-con">
-        <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
-      </div>
-
+      <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+      <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
     </div>
   </section>
 
