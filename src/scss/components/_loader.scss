@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 1001;
   clip-path: circle(150% at 100% 0);
   transition: clip-path 0.8s ease-in-out;
 
