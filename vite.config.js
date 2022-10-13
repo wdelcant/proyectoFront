@@ -3,7 +3,6 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   root: 'src',
   base: '/',
-
   publicDir: '../public',
 
   build: {
@@ -16,7 +15,14 @@ export default defineConfig({
     polyfillDynamicImport: true,
     brotliSize: true,
     chunkSizeWarningLimit: 500,
+    rollupOptions: {
+      input: {
+        main: '/index.html',
+        nested: '/pages/nosotros.html',
+      },
+    },
   },
+
   plugins: [],
   server: {
     port: 3000,
