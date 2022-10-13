@@ -1,0 +1,11 @@
+.contact__container {
+  @include container;
+  .contact__content {
+    &--title {
+      @include title;
+    }
+
+  }
+}
+
+

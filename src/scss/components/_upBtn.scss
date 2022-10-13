@@ -16,11 +16,14 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   z-index: 999;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 3px #fff;
+  @include classAnimate();
+
   img {
     width: 60%;
     height: 50%;
     object-fit: cover;
+    
   }
 
   &:hover {

@@ -10,8 +10,8 @@ import '../scss/main.scss';
 
 // llamado a las funciones
 loader();
-scrollNav();
 navBar();
+scrollNav();
 waveEffect();
 btnEffect();
 slider();

@@ -40,10 +40,12 @@
     margin: 0;
     padding: 0;
     @include classAnimate();
+    @include classKeyframe();
 
     &.effect {
       display: inline;
       @include classKeyframe();
+      @include classAnimate();
     }
   }
 }

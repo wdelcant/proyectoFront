@@ -1,4 +1,4 @@
-.clients__containter {
+.clients__container {
   @include container;
 }
 
@@ -10,22 +10,98 @@
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  
+
   &--title {
     @include title();
   }
-  &--list {
+  &--cards {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
     width: 100%;
-    height: 100%;
-    &--item {
-      margin: 0 1rem;
-      img {
-        width: 100px;
-        height: 100px;
+
+    &--card {
+      position: relative;
+      border-radius: $spacing-sm;
+      width: 240px;
+      height: 440px;
+      margin: 1rem;
+      cursor: pointer;
+      box-shadow: 0 0 0 10px #fff;
+
+      @include mobile {
+        width: 100%;
+        height: 420px;
+      }
+
+      &-profile {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin: 15px auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+          border-radius: 50%;
+          box-shadow: $secondary-color 0px 0px 0px 5px;
+        }
+      }
+
+      &-text {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 30px auto;
+        padding: 0 10px;
+        text-align: center;
+
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin: 5px;
+          padding: 0;
+        }
+
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      &-fb {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      &-valoracion {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 420px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: 700;
+        @include mobile() {
+          height: 380px;
+        }
       }
     }
   }

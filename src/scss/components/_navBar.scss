@@ -86,7 +86,7 @@ nav.sticky {
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
-    z-index: 3;
+    z-index: 1000;
   }
   .hamburger {
     display: block;
@@ -139,6 +139,9 @@ nav.sticky {
   .nav-links li:nth-child(7) {
     transition: all 0.5s ease 1s;
     margin: 0;
+  }
+  .nav-links li a {
+    text-shadow: 0px 0px 5px, 1px 1px 7px black;
   }
   li.fade {
     opacity: 1;
