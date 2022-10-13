@@ -1,9 +1,11 @@
-import { defineConfig, loadEnv } from 'vite';
+import { defineConfig } from 'vite';
 
 export default defineConfig({
   root: 'src',
   base: '/',
+
   publicDir: '../public',
+
   build: {
     outDir: '../dist',
     emptyOutDir: true,
@@ -34,4 +36,22 @@ export default defineConfig({
       },
     },
   },
+
+  optimizeDeps: {
+    include: ['@popperjs/core'],
+  },
+
+  define: {
+    'process.env': {},
+  },
+
+  esbuild: {
+    jsxFactory: 'h',
+    jsxFragment: 'Fragment',
+  },
+
+  logLevel: 'info',
+  clearScreen: true,
+
+  // https://vitejs.dev/config/
 });
