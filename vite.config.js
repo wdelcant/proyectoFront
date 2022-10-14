@@ -15,6 +15,14 @@ export default defineConfig({
     polyfillDynamicImport: true,
     brotliSize: true,
     chunkSizeWarningLimit: 500,
+    rollupOptions: {
+      input: {
+        main: '/index.html',
+        // add pages here
+        nested: resolve(__dirname, 'src/pages/pideaqui.html'),
+        nested2: resolve(__dirname, 'src/pages/nosotros.html'),
+      },
+    },
   },
 
   plugins: [
