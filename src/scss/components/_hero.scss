@@ -32,6 +32,18 @@
       box-shadow: 0px 0px 5px, 1px 1px 7px black;
     }
   }
+
+  &-arrow {
+    bottom: 0;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -20%);
+    text-shadow: 0px 0px 5px, 1px 1px 7px black;
+  }
+
   &-wave {
     display: none;
     position: absolute;
@@ -48,4 +60,77 @@
       @include classAnimate();
     }
   }
+}
+
+/* bouncing arrow */
+
+.fa-chevron-down {
+  width: 40px;
+  margin: 0 auto;
+  bottom: 10px;
+  cursor: pointer;
+  opacity: 1;
+  transition: 1.2s ease;
+  text-shadow: 0px 0px 5px, 1px 1px 7px black;
+}
+
+/* Scroll down indicator (bouncing) */
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -ms-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
