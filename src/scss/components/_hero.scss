@@ -2,9 +2,11 @@
   background: linear-gradient(0deg, #ffffff00, #000000aa),
     url(/assets/hero.svg) no-repeat center center;
   @include mobile() {
-    background: url(/assets/hero.svg) no-repeat;
+    background: linear-gradient(0deg, #ffffff00, #000000aa),
+      url(/assets/hero.svg) no-repeat;
     background-size: cover;
   }
+
   background-size: cover;
   height: 100vh;
   position: relative;
@@ -133,4 +135,32 @@
 .bounce {
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
+}
+
+.pideaqui {
+  background: linear-gradient(0deg, #ffffff00, #000000aa),
+    url(/assets/pideaqui.svg) no-repeat center center;
+  @include mobile() {
+    background: linear-gradient(0deg, #ffffff00, #000000aa),
+      url(/assets/pideaqui.svg) no-repeat;
+    background-size: cover;
+  }
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.aboutus {
+  background: linear-gradient(0deg, #ffffff00, #000000aa),
+    url(/assets/aboutus.svg) no-repeat center center;
+  @include mobile() {
+    background: linear-gradient(0deg, #ffffff00, #000000aa),
+      url(/assets/aboutus.svg) no-repeat;
+    background-size: cover;
+  }
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  width: 100%;
 }

@@ -19,6 +19,7 @@ export default defineConfig({
       input: {
         main: '/index.html',
         nested: '/pages/nosotros.html',
+        nested: '/pages/pideaqui.html',
       },
     },
   },
