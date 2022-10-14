@@ -18,7 +18,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: '/index.html',
-        nested: resolve(__dirname, 'src/pages/'),
+        nested: resolve(
+          __dirname,
+          'src/pages/nosotros.html',
+          'src/pages/pideaqui.html'
+        ),
       },
     },
   },
