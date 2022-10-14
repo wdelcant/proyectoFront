@@ -18,8 +18,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: '/index.html',
-        nested: '/pages/nosotros.html',
-        nested: '/pages/pideaqui.html',
+        nested: '/pages/',
       },
     },
   },
