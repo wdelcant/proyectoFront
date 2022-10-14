@@ -13,7 +13,6 @@ export function navBar() {
     //Animación del menu hamburguesa
     hamburger.classList.toggle('toggle');
   });
-
   return navBar;
 }
 

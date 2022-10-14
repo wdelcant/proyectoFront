@@ -62,7 +62,7 @@
         position: relative;
         width: 100%;
         height: 100%;
-        margin: 20px auto;
+        margin: 50px auto;
         padding: 0 10px;
         text-align: center;
 
@@ -86,19 +86,26 @@
       }
       &-fb {
         position: absolute;
-        top: 5px;
-        right: 5px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
-        font-weight: 700;
+        clip-path: polygon(0 0, 100% 100%, 100% 0);
+        background-color: #3b5998;
+        img {
+          position: absolute;
+          top: 5px;
+          right: 5px;
+          object-fit: cover;
+          object-position: center;
+          width: 25px;
+        }
         @include mobile() {
-          top: 10px;
-          right: 10px;
+          top: 0;
+          right: 0;
         }
       }
       &-valoracion {
@@ -106,12 +113,19 @@
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 390px;
+        height: 360px;
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
         font-weight: 700;
+        img{
+          width: 26px;
+          height: 26px;
+          object-fit: cover;
+          object-position: center;
+          
+        }
         @include mobile() {
           height: 300px;
         }
