@@ -9,6 +9,7 @@ export default defineConfig({
     outDir: '../dist',
     emptyOutDir: true,
     assetsDir: 'assets',
+
     sourcemap: true,
     minify: true,
     target: 'esnext',
@@ -18,8 +19,20 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: '/index.html',
-        nested: '/pages/',
+        // add pages here
+        nested: 'src/pages/pideaqui.html',
+        nested2: 'src/pages/nosotros.html',
       },
+      output: {
+        // js minify
+        minifyInternalExports: true,
+        // css minify
+        compact: true,
+        // Javascript
+        chunkFileNames: 'js/script.js',
+        
+      },
+      // js
     },
   },
 
@@ -42,22 +55,6 @@ export default defineConfig({
       },
     },
   },
-
-  optimizeDeps: {
-    include: ['@popperjs/core'],
-  },
-
-  define: {
-    'process.env': {},
-  },
-
-  esbuild: {
-    jsxFactory: 'h',
-    jsxFragment: 'Fragment',
-  },
-
-  logLevel: 'info',
-  clearScreen: true,
 
   // https://vitejs.dev/config/
 });
