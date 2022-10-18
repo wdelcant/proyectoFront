@@ -30,13 +30,24 @@ export default defineConfig({
         compact: true,
         // Javascript
         chunkFileNames: 'js/script.js',
-        
       },
       // js
     },
   },
+  define: {
+    'process.env': process.env,
+  },
 
-  plugins: [],
+  plugins: [
+    //vite and firebase env
+    {
+      name: 'vite-plugin-env',
+      config: () => ({
+        VITE_APP_API_KEY: process.env.VITE_APP_API_KEY,
+        VITE_APP_AUTH_DOMAIN: process.env.VITE_APP_AUTH_DOMAIN,
+      }),
+    },
+  ],
   server: {
     port: 3000,
     watch: {
