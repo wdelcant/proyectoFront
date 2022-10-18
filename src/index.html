@@ -59,21 +59,21 @@
         <li><a href="./pages/nosotros.html">Nosotros</a></li>
         <li><a href="#contact">Contacto</a></li>
 
-        <div id="show-login" class="nav-liks logged-out ">
-          <a href="#">
-            <img src="/assets/user.svg" alt="Iniciar sesión">
-            <div>
-              <p class="">Iniciar Sesión</p>
-            </div>
-          </a>
-        </div>
+        <!-- botón de login -->
+        <div class="menu__access">
+          <div id="show-login" class="logged-out">
+            <a href="#">
+              <img class="menu__access--icon" src="/assets/user.svg" alt="Iniciar sesión">
+            </a>
+          </div>
 
-        <div id="logout" class="logged-in">
-          <a href="#">
-            <p>
-              Cerrar Sesión
-            </p>
-          </a>
+          <div id="logout" class="logged-in">
+            <a href="#">
+              <p class="menu__access--text">
+                Cerrar Sesión
+              </p>
+            </a>
+          </div>
         </div>
       </ul>
 
@@ -137,8 +137,6 @@
               <label for="phone">Teléfono</label>
               <input name="phone" type="tel" id="signup-phone" placeholder="56954205188">
             </div>
-
-
 
             <div class="form-element">
               <label for="password">Contraseña</label>

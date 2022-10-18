@@ -1,5 +1,8 @@
 import { auth } from './firebaseConfig';
-import { createUserWithEmailAndPassword } from 'firebase/auth';
+import {
+  createUserWithEmailAndPassword,
+  sendEmailVerification,
+} from 'firebase/auth';
 import { alertMessage } from '../components/alertMessage';
 
 const signupForm = document.querySelector('#signup-form');
@@ -32,6 +35,10 @@ signupForm.addEventListener('submit', async e => {
         password,
         passwordTwo
       );
+      await sendEmailVerification(userCredentials.user);
+      alertMessage('Verifica tu correo', 'success');
+      signupForm.reset();
+
       document.querySelector('.popup-register').classList.remove('active');
       alertMessage(`Bienvenido ${userCredentials.user.email}`, 'success');
     }

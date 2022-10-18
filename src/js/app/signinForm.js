@@ -12,7 +12,9 @@ singInForm.addEventListener('submit', async e => {
 
   try {
     const credentials = await signInWithEmailAndPassword(auth, email, password);
+
     alertMessage(`Bienvenido nuevamente ${credentials.user.email}`, 'success');
+
     // cierra el modal
     document.querySelector('.popup-login').classList.remove('active');
   } catch (error) {
