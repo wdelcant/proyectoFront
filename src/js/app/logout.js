@@ -8,6 +8,6 @@ logout.addEventListener('click', async () => {
   await signOut(auth);
   alertMessage('Sesión cerrada correctamente');
   setTimeout(() => {
-    window.location.href = 'index.html';
+    window.location.href = '/index.html';
   }, 2000);
 });
