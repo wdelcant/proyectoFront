@@ -23,5 +23,10 @@ dist-ssr
 *.sln
 *.sw?
 
+# Environment variables
+.env.local
+.env.*.local
 .env
-vite.config.js
+.env.*
+!.env.local.example
+!.env.example
