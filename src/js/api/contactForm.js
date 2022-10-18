@@ -3,7 +3,7 @@ import Toastify from 'toastify-js';
 // creamos una constante para document y asi solo usar d
 const d = document;
 
-export function contactForm() {
+function contactForm() {
   // Valida formulario y realiza petición API para envío de correo
 
   const $form = d.querySelector('.contact-form');
@@ -98,3 +98,4 @@ export function contactForm() {
       );
   });
 }
+document.addEventListener('DOMContentLoaded', contactForm);
