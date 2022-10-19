@@ -1,8 +1,11 @@
 .popup-login,
 .popup-register {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  left: 80%;
+  @media screen and (max-width: 980px) {
+    left: 50%;
+  }
+
   opacity: 0;
   transform: translate(50%, -250%) scale(1.25);
   padding: 20px 30px;
@@ -95,7 +98,9 @@
   font-weight: 600;
 }
 
-.login__modal {
+.login__modal,
+.register__modal {
+  background: rgba(0, 0, 0, 0.5);
   &--btngoogle {
     margin: $spacing-sm;
     width: 280px;
