@@ -18,7 +18,7 @@ El proyecto contiene informacion de distintos tipos de pasteles y tortas, en el 
 # Proyecto realizado con JS Vanilla con Vite
 
 Para iniciar el proyecto :
-priomero realiza un clon
+primero realiza un clon
 luego ejecuta en consolta:
 npm install
 
