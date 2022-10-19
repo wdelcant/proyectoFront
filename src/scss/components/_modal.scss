@@ -100,7 +100,6 @@
 
 .login__modal,
 .register__modal {
-  background: rgba(0, 0, 0, 0.5);
   &--btngoogle {
     margin: $spacing-sm;
     width: 280px;
@@ -138,3 +137,4 @@
     }
   }
 }
+

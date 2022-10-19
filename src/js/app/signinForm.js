@@ -18,7 +18,9 @@ singInForm.addEventListener('submit', async e => {
     // cierra el modal
     document.querySelector('.popup-login').classList.remove('active');
   } catch (error) {
-    if (error.code === 'auth/invalid-email') {
+    if (email === '' || password === '') {
+      alertMessage('Debes ingresar un todos los datos', 'error');
+    } else if (error.code === 'auth/invalid-email') {
       alertMessage('El correo no es valido', 'error');
     } else if (error.code === 'auth/user-disabled') {
       alertMessage('El usuario esta deshabilitado', 'error');

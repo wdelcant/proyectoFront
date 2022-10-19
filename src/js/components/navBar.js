@@ -6,6 +6,7 @@ export function navBar() {
   hamburger.addEventListener('click', () => {
     //Animación de los links
     navLinks.classList.toggle('open');
+
     links.forEach(link => {
       link.classList.toggle('fade');
     });
