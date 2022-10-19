@@ -1,6 +1,7 @@
 ## Desarrollador: Wilson Del Canto Cepeda
 
 ## [Link Demo](https://proyectofront.vercel.app/)
+## [Documentacion del proyecto](https://github.com/wdelcant/proyectoFront/blob/master/public/documentacion%20frontend.pdf)
 
 ### Proyecto de pagina web de Reposteria.
 
