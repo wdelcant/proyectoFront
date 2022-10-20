@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-import Toastify from 'toastify-js';
-=======
->>>>>>> ece70134573bb4365285ea1239a59d47ce303267
 import { alertMessage } from '../components/alertMessage';
 
 // creamos una constante para document y asi solo usar d
@@ -69,17 +65,6 @@ function contactForm() {
         response.classList.remove('none');
 
         // Si es ok, envía una alerta con datos enviados
-<<<<<<< HEAD
-        alertMessage(json.message, 'success');
-      })
-      // Si la respuesta de la API es errónea arroja un error
-      .catch(error => {
-        alertMessage(error, 'error');
-        $loader.classList.add('none');
-        let message =
-          error.statusText || 'Ocurrió un error al enviar, intenta nuevamente';
-        $response.innerHTML = `<p>Error ${error.status}:${message}</p>`;
-=======
         alertMessage(`Mensaje enviado correctamente`, 'success');
         // Si es enviado el formulario este se limpia
         form.reset();
@@ -92,7 +77,6 @@ function contactForm() {
         );
 
         loader.classList.add('none');
->>>>>>> ece70134573bb4365285ea1239a59d47ce303267
       })
       .finally(() =>
         setTimeout(() => {
