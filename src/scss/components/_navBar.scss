@@ -158,3 +158,24 @@ nav.sticky {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
 }
+
+.menu__access {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  a {
+    text-decoration: none;
+  }
+
+  &--icon {
+    display: block;
+    color: $secondary-color;
+    cursor: pointer;
+  }
+  &--text {
+    display: block;
+
+    color: $secondary-color;
+    cursor: pointer;
+  }
+}
