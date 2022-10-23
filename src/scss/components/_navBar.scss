@@ -1,8 +1,6 @@
 nav {
   height: 6rem;
   width: 100vw;
-  // background-color: $bg-nav;
-
   display: flex;
   position: fixed;
   z-index: 10;
@@ -19,7 +17,6 @@ nav.sticky {
   }
 }
 
-/*Styling logo*/
 .logo {
   padding: 1vh 1vw;
   text-align: center;
@@ -33,7 +30,6 @@ nav.sticky {
   }
 }
 
-/*Styling Links*/
 .nav-links {
   display: flex;
   list-style: none;
@@ -70,7 +66,6 @@ nav.sticky {
   width: 80%;
 }
 
-/*Styling Hamburger Icon*/
 .hamburger div {
   width: 30px;
   height: 3px;
@@ -82,7 +77,6 @@ nav.sticky {
   display: none;
 }
 
-/*Stying for small screens*/
 @media screen and (max-width: 800px) {
   nav {
     position: fixed;
@@ -147,7 +141,7 @@ nav.sticky {
     opacity: 1;
   }
 }
-/*Animating Hamburger Icon on Click*/
+
 .toggle .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }

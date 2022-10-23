@@ -1,30 +1,25 @@
 .footer__container {
-  // footer container
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #efc3fb;
   &--content {
-    // footer content
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     &--title {
-      // footer title
       font-size: 2rem;
       font-weight: 700;
       margin-bottom: 1rem;
     }
     &--links {
-      // footer links
       display: flex;
       flex-direction: row;
       align-items: center;
       justify-content: center;
       &--link {
-        // footer link
         margin: 0 1rem;
         text-decoration: none;
         color: black;

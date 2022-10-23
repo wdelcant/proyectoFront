@@ -6,7 +6,7 @@ import { getAuth } from 'firebase/auth';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  // apiKey: `${process.env.VITE_APP_API_KEY}`,
+  // apiKey: `${process.env.VITE_APP_API_KEY}`,  // intente ocultar la key con vite y .env pero no me dejo.
   // authDomain: `${process.env.VITE_APP_AUTH_DOMAIN}`,
   apiKey: 'AIzaSyCPXxi23ryVz7HsDITVM62asoi6Evln2eo',
   authDomain: 'proyectofrontcf.firebaseapp.com',

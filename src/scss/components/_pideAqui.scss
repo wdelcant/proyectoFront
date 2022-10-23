@@ -1,0 +1,24 @@
+.pideaqui__container {
+  @include container;
+  padding: 0 0 2rem 0;
+  background-color: $bg-color;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.pideaqui__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  @include media-breakpoint-up(md) {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+}

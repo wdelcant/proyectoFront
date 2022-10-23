@@ -8,6 +8,7 @@ import './app/signinForm';
 import './app/googleLogin';
 import './app/logout';
 
+// verifica si el usuario esta logeado
 onAuthStateChanged(auth, async user => {
   if (user) {
     loginCheck(user);
@@ -40,5 +41,3 @@ waveEffect();
 btnEffect();
 slider();
 moveDown();
-
-

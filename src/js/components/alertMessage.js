@@ -17,5 +17,3 @@ export function alertMessage(message, type) {
         : 'linear-gradient(to right, #ff5f6d, #ffc371)',
   }).showToast();
 }
-
-

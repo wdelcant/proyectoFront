@@ -16,12 +16,24 @@ El proyecto contiene informacion de distintos tipos de pasteles y tortas, en el 
 ![image info](https://github.com/wdelcant/proyectoFront/blob/master/public/assets/images/fullpage.png)
 
 
-# Proyecto realizado con JS Vanilla con Vite
+# Proyecto realizado con JS Vanilla y Vite
 
 Para iniciar el proyecto :
-primero realiza un clon
-luego ejecuta en consolta:
+primero realiza un clon del proyecto,
+luego ejecuta en consola:
 npm install
+
+# API
+
+El proyecto cuenta con una api fetch para realizar envíos de formulario de contacto.
+Esta la puedes encontrar en la pagina https://formsubmit.co/
+Con ella podemos enviar correos de manera gratuita sin necesidad de algún pago.
+
+# APP
+
+Se utilizo firebase, para simular un backend de autenticación de manera más consistente y 
+poder realizar un registro de usuarios para acceder a la sección de pedidos.
+A su vez se agrego sistema de logeo con correo registrado y con una cuenta de google.
 
 # Librerías usadas
 
@@ -37,7 +49,7 @@ Se uso para la autenticación
 Sass
 [https://sass-lang.com/](https://sass-lang.com/)
 
-## npm install --save-dev sass
+## npm i --save-dev sass
 
 Se uso para estilizar el proyecto
 
@@ -46,7 +58,7 @@ Se uso para estilizar el proyecto
 Toastify-js
 [https://github.com/sweetalert2/sweetalert2-react-content](https://apvarun.github.io/toastify-js/)
 
-## npm install --save toastify-jsnormalize.css
+## npm i --save toastify-jsnormalize.css
 
 Se utilizo para las alertas
 
@@ -64,8 +76,15 @@ Se utilizo para las fuentes de letras
 Normalize.css
 [https://necolas.github.io/normalize.css/8.0.1/normalize.css](https://necolas.github.io/normalize.css/8.0.1/normalize.css)
 
-## npm install normalize.css
+## npm i normalize.css
 
 Se utilizo para que todos los elementos esten de manera más consistente y en línea con los estándares modernos.
 
+---
+## Contacto
+- Contacto: wilsondelcanto.redes@gmail.com
+- Web: https://wilsondelcanto.dev
 
+---
+
+> No te límites a ti mismo sólo porque otras personas no acepten el hecho de que puedes hacer otra cosa. —
