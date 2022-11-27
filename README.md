@@ -19,18 +19,13 @@ El proyecto contiene informacion de distintos tipos de pasteles y tortas, en el 
 
 # Instalación y configuración para ejecucion. 
 
-- Primero se debe clonar el repositorio con git clone https://github.com/wdelcant/proyectoFront.git
-- Despues en el la carpeta donde se clono el repositorio ejecutar comando npm i, para instalar las dependencias.
-- Una vez instaladas la dependencia se ejecuta vite con el comando npm run dev
-- Si queremos realizar el deploy del proyecto debemos ejecutar el comando npm run build.
+- Primero se debe clonar el repositorio con ```git clone https://github.com/wdelcant/proyectoFront.git```
+- Despues en el la carpeta donde se clono el repositorio ejecutar comando ```npm i,```  para instalar las dependencias.
+- Una vez instaladas la dependencia se ejecuta vite con el comando ```npm run dev```
+- Si queremos realizar el deploy del proyecto debemos ejecutar el comando ```npm run build.```
 
 
 # Proyecto realizado con JS Vanilla y Vite
-
-Para iniciar el proyecto :
-primero realiza un clon del proyecto,
-luego ejecuta en consola:
-npm install
 
 # API
 
