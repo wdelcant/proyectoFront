@@ -6,7 +6,7 @@ $font-family-alt: 'Roboto Condensed', sans-serif;
 $font-family-code: 'Roboto Mono', monospace;
 
 // colors
-$primary-color: rgb(122, 122, 122);
+$primary-color: #7a7a7a;
 $secondary-color: #e8adf8;
 $tertiary-color: #00f;
 $dark: #1e1e1e;
@@ -18,7 +18,7 @@ $secondary-color-hover: #ce77fc;
 
 // background color
 $bg-color: #f3f3f3;
-$bg-nav: rgb(255, 255, 255);
+$bg-nav: #ffffff;
 
 // font sizes
 $font-size: 1rem;
@@ -60,5 +60,27 @@ $transition-slow: all 0.5s ease-in-out;
 $animation-default: all 0.3s ease-in-out;
 $animation-fast: all 0.1s ease-in-out;
 $animation-slow: all 0.5s ease-in-out;
+
+// responsive breakpoints
+
+$breakpoint: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+$breakpoint-value: map-get($grid-breakpoints, $breakpoint);
 
 // Language: scss

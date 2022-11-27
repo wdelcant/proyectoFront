@@ -26,6 +26,13 @@
   }
 }
 
+@mixin media-breakpoint-up($breakpoint) {
+  $breakpoint-value: map-get($grid-breakpoints, $breakpoint);
+  @media (min-width: $breakpoint-value) {
+    @content;
+  }
+}
+
 @function pixeles-rem($px) {
   $resultado: math.div($px, 16) * 1rem;
 
