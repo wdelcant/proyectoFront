@@ -24,7 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 
-<<<<<<< HEAD
+
 # Environment variables
 .env.local
 .env.*.local
@@ -32,7 +32,7 @@ dist-ssr
 .env.*
 !.env.local.example
 !.env.example
-=======
+
 # env files
 
 .env
@@ -41,4 +41,4 @@ dist-ssr
 
 # docker
 .devcontainer
->>>>>>> fe3269fc2f184f95ddee74638c3253af66e7bebc
+

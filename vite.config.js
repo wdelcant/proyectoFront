@@ -34,15 +34,14 @@ export default defineConfig({
       // js
     },
   },
-<<<<<<< HEAD
   // define: {
   //   'process.env': import.meta.env,
   // },
-=======
+
   define: {
     'process.env': {},
   },
->>>>>>> cbd0d5f48580b2422a9f05011dbc26fba3918e45
+
 
   plugins: [
     //vite and firebase env
