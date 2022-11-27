@@ -44,7 +44,7 @@ A su vez se agrego sistema de logeo con correo registrado y con una cuenta de go
 Firebase
 [https://console.firebase.google.com/](https://console.firebase.google.com/)
 
-## npm i firebase
+## ```npm i firebase```
 
 Se uso para la autenticación
 
@@ -53,7 +53,7 @@ Se uso para la autenticación
 Sass
 [https://sass-lang.com/](https://sass-lang.com/)
 
-## npm i --save-dev sass
+## ```npm i --save-dev sass```
 
 Se uso para estilizar el proyecto
 
@@ -62,7 +62,7 @@ Se uso para estilizar el proyecto
 Toastify-js
 [https://github.com/sweetalert2/sweetalert2-react-content](https://apvarun.github.io/toastify-js/)
 
-## npm i --save toastify-jsnormalize.css
+## ```npm i --save toastify-jsnormalize.css```
 
 Se utilizo para las alertas
 
@@ -71,7 +71,7 @@ Se utilizo para las alertas
 FortAwesome
 [https://react-icons.github.io/react-icons](https://github.com/FortAwesome/Font-Awesome)
 
-## npm i @fortawesome/fontawesome-free
+## ```npm i @fortawesome/fontawesome-free```
 
 Se utilizo para las fuentes de letras
 
@@ -80,7 +80,7 @@ Se utilizo para las fuentes de letras
 Normalize.css
 [https://necolas.github.io/normalize.css/8.0.1/normalize.css](https://necolas.github.io/normalize.css/8.0.1/normalize.css)
 
-## npm i normalize.css
+## ```npm i normalize.css```
 
 Se utilizo para que todos los elementos esten de manera más consistente y en línea con los estándares modernos.
 
