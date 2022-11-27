@@ -61,21 +61,55 @@
       color: #3b5998;
       width: 32px;
       margin: 0 0.8rem;
+      padding: 1px;
+      background-color: #f5f5f5;
+      border-radius: 30%;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.752),
+        0 1px 1px rgba(255, 255, 255, 0.2);
+      &:hover {
+        box-shadow: 0px 0px 5px, 1px 1px 7px #3b5998;
+      }
     }
     &-twitter {
       color: #1da1f2;
       width: 32px;
-      margin: 0 0.8rem;
+      margin: 0.8rem;
+      padding: 1px;
+      background-color: #f5f5f5;
+      border-radius: 30%;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.752),
+        0 1px 1px rgba(255, 255, 255, 0.2);
+      &:hover {
+        box-shadow: 0px 0px 5px, 1px 1px 7px #1da1f2;
+      }
     }
     &-instagram {
       color: #e1306c;
       width: 32px;
+      padding: 1px;
+
       margin: 0 0.8rem;
+      background-color: #f5f5f5;
+
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.752),
+        0 1px 1px rgba(255, 255, 255, 0.2);
+      border-radius: 30%;
+      &:hover {
+        box-shadow: 0px 0px 5px, 1px 1px 7px #e1306c;
+      }
     }
     &-whatsapp {
       color: #25d366;
       width: 32px;
+      padding: 1px;
       margin: 0 0.8rem;
+      border-radius: 30%;
+      background-color: #f5f5f5;
+      box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.752),
+        0 1px 1px rgba(255, 255, 255, 0.2);
+      &:hover {
+        box-shadow: 0px 0px 5px, 1px 1px 7px #25d366;
+      }
     }
   }
   &--copiright {
@@ -85,9 +119,11 @@
     justify-content: center;
     font-size: 1rem;
     width: 100%;
+    color: #303030;
     background-color: $secondary-color;
     p {
       padding: 0.5rem;
+
       @include mobile() {
         margin: 1rem;
         padding: 0.5rem;
@@ -96,7 +132,7 @@
     }
     a {
       text-decoration: none;
-      color: $primary-color;
+      color: #303030;
       &:hover {
         color: #f5f5f5;
       }
